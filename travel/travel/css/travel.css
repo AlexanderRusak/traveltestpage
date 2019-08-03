@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css?family=Libre+Franklin:400,900&display=swap");
-body {
+nav {
   background-color: #0d3a7f; }
+
+section {
+  background-color: #0d3a7f;
+  height: 581px; }
 
 .section-for-navbar-brand {
   height: 89px;
@@ -91,19 +95,23 @@ body {
   font-family: 'Libre Franklin', sans-serif;
   text-align: center;
   height: 22px;
-  font-size: 12px;
-  font-weight: 600;
+  font-size: 11px;
+  font-weight: 500;
   font-style: normal;
   font-stretch: normal;
   line-height: 1.83;
   letter-spacing: 0.6px;
-  text-align: center; }
+  text-align: center;
+  text-transform: uppercase; }
 
 .btn-call a {
   width: 89px;
   height: 89px;
   padding: 0;
   background-color: #fff; }
+
+.btn-call:last-child a {
+  background-color: transparent; }
 
 .navbar {
   margin-bottom: 0; }
@@ -232,7 +240,7 @@ body {
   text-decoration: none; }
 
 .carousel-indicators {
-  bottom: 320px !important; }
+  bottom: 233px !important; }
 
 .carousel-indicators li {
   width: 8px;
@@ -247,6 +255,9 @@ body {
   width: 9px;
   height: 9px;
   margin-right: 20px; }
+
+.carousel-inner {
+  height: 581px; }
 
 .carousel-indicators {
   left: 50.5%; }
@@ -267,7 +278,7 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
-  left: 287px; }
+  left: 32.3%; }
 
 .carousel-sticker-information-title {
   margin-top: 20px;
@@ -299,11 +310,15 @@ body {
   letter-spacing: 1.30px;
   color: #ffffff; }
 
+.menu-option-selector {
+  -webkit-box-shadow: 0 6px 21px rgba(140, 160, 191, 0.24);
+  box-shadow: 0 6px 21px rgba(140, 160, 191, 0.24);
+  bottom: 88px; }
+
 .menu-option-selector div {
   height: 88px;
   background-color: #8ca0bf;
-  position: relative;
-  bottom: 175px; }
+  position: relative; }
 
 .menu-option-selector .col-lg-10 {
   width: 81.4% !important; }
@@ -314,7 +329,6 @@ body {
 .menu-option-selector .col-lg-7 {
   width: 54.6% !important;
   position: relative;
-  bottom: 175px;
   height: 88px;
   border: none;
   outline: 0; }
@@ -322,28 +336,194 @@ body {
 .menu-option-selector .col-lg-2 {
   width: 18.5% !important;
   position: relative;
-  bottom: 175px;
   height: 88px;
   border: none;
   outline: 0; }
 
 .menu-option-selector .col-lg-1 {
   position: relative;
-  bottom: 175px;
   height: 88px;
   border: none;
   outline: 0; }
 
-.red {
-  background-color: red !important; }
+.destination-input {
+  padding-left: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-image: url("../images/input-icon/destination.svg");
+  background-repeat: no-repeat;
+  text-indent: 30px;
+  background-position: 4% 50%;
+  padding-top: 0;
+  padding-bottom: 0;
+  width: 183px;
+  height: 22px;
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.57;
+  letter-spacing: 0.47px; }
 
-.green {
-  background-color: green !important; }
+.menu-option-selector input::-webkit-input-placeholder {
+  color: #626c7d;
+  opacity: 1; }
 
-.blue {
-  background-color: blue !important; }
+.menu-option-selector input:-ms-input-placeholder {
+  color: #626c7d;
+  opacity: 1; }
+
+.menu-option-selector input::-ms-input-placeholder {
+  color: #626c7d;
+  opacity: 1; }
+
+.menu-option-selector input::placeholder {
+  color: #626c7d;
+  opacity: 1; }
+
+.duration-input {
+  background-image: url("../images/input-icon/duration.svg");
+  padding-left: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  text-indent: 30px;
+  background-position: 14% 50%;
+  padding-top: 0;
+  padding-bottom: 0;
+  width: 42px;
+  height: 22px;
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.57;
+  letter-spacing: 0.47px; }
+
+.when-input {
+  padding-left: 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background-image: url("../images/input-icon/date-when.svg");
+  background-repeat: no-repeat;
+  text-indent: 30px;
+  background-position: 14% 50%;
+  padding-top: 0;
+  padding-bottom: 0;
+  width: 42px;
+  height: 22px;
+  font-family: 'Libre Franklin', sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.57;
+  letter-spacing: 0.47px; }
+
+.button-next-step {
+  background-color: #16c2b8;
+  background-image: url("../images/input-icon/arrow.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 50px;
+  background-position: center; }
+
+.col-md-8 {
+  width: 65% !important; }
+
+.mobile {
+  display: none; }
+
+@media (max-width: 1199px) {
+  .mobile {
+    position: relative;
+    bottom: 500px;
+    display: block; }
+  .title-section {
+    display: none; }
+  .col-md-8 {
+    width: 66.66666667% !important; }
+  .carousel-sticker-information {
+    display: none; }
+  .carousel-indicators {
+    display: none; }
+  .menu-option-selector .col-lg-1,
+  .menu-option-selector .col-lg-2,
+  .menu-option-selector .col-lg-2,
+  .menu-option-selector .col-lg-7 {
+    width: 100% !important; }
+  .menu-option-selector {
+    bottom: 130px; }
+  .menu-option-selector input {
+    background-position: 4% 50%; }
+  .menu-option-selector input:last-child {
+    background-position: 50% 50%; }
+  .fade-window-for-menu-option-selector {
+    display: none; } }
+
+.mobile-basket {
+  display: none; }
 
 @media (min-width: 768px) {
   .navbar-nav {
     float: none;
     margin: 0; } }
+
+@media (max-width: 768px) {
+  .navbar-toggle {
+    float: left;
+    width: 60px;
+    height: 60px;
+    padding: 0;
+    margin: 0;
+    border-radius: 0;
+    background-color: #ebf3ff; }
+  .logo-navbar-brand {
+    width: 108px;
+    height: 44px; }
+  .col-xs-offset-2 {
+    margin-left: auto; }
+  .logo-navbar-brand {
+    width: 83.5%;
+    position: relative;
+    right: 20%; }
+  .navbar-toggle .icon-bar {
+    margin-left: 18px; }
+  .navbar-brand {
+    width: auto !important;
+    float: none; }
+  .section-for-navbar-brand {
+    height: 60px !important; }
+  .navbar,
+  .navbar-brand {
+    height: 60px;
+    border: none; }
+  .mobile-basket {
+    display: block;
+    width: 60px;
+    height: 60px;
+    background-color: #0d3a7f;
+    float: right;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; } }

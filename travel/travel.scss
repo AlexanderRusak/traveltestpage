@@ -501,8 +501,12 @@ section {
     float: none;
     margin: 0;
   }
+
 }
-@media (max-width: 768px) {
+@media (max-width: 767px) {
+  .col-sm-8 {
+      width: 100% !important;
+  }
   .navbar-toggle {
     float: left;
     width: 60px;
@@ -548,6 +552,7 @@ section {
   }
 
   .mobile-basket {
+    position: relative;
     display: block;
     width: 60px;
     height: 60px;
@@ -558,4 +563,90 @@ section {
     justify-content: center;
   }
 
+  .navbar-default .navbar-toggle {
+    z-index: 99;
+  }
+
+  .main-title {
+    width: 332px;
+    height: 88px;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 36px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: normal;
+    letter-spacing: 0.9px;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  .main-text {
+    margin-top: -3px;
+    width: 249px;
+    height: 47px;
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 14px;
+    font-weight: 300;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.57;
+    letter-spacing: 0.7px;
+    text-align: center;
+    color: #ffffff;
+  }
+
+  .button-create-an-account {
+    margin-bottom: 12px;
+    margin-top: 24px;
+    width: 218px;
+    height: 66px;
+    background-color: #16c2b8;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+
+  .menu-option-selector .col-lg-7 {
+    height: 60px;
+    margin-top: 25px;
+  }
+
+  .menu-option-selector input {
+    background-position: 9% 50%;
+  }
+
+  .destination-input {
+    padding-left: 27px;
+  }
+
+  .navbar-nav {
+    display: inline-block !important;
+    width: 100%!important;
+    margin: 0;
+    height: 100%;
+  }
+
+  .navbar-nav li {
+    height: 60px;
+  }
+
+  .navbar-default .navbar-nav .col-lg-2 {
+    width: 100% !important;
+  }
+
+  .navbar-nav .btn-menu .btn-call,
+  .navbar-nav .btn-menu:last-child {
+    display: none !important;
+  }
+
+  .navbar-nav .btn-menu {
+    float: left;
+  }
 }

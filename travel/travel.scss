@@ -98,7 +98,7 @@ section {
 }
 
 .navbar-default .navbar-nav .col-lg-2 {
-  width: 39% !important;
+  width: 23% !important;
 }
 
 .navbar-nav .btn-menu h4 {
@@ -387,7 +387,9 @@ section {
   color: #626c7d;
   opacity: 1;
 }
-
+.navbar-default .navbar-nav .col-lg-2:last-child{
+  width: 89px !important;
+}
 .duration-input {
   background-image: url("../images/input-icon/duration.svg");
   padding-left: 30px;
@@ -623,9 +625,15 @@ section {
   }
 
   .destination-input {
-    padding-left: 27px;
+    padding-left: 50px;
   }
+  .when-input {
+      padding-left: 50px;
+    }
+    .duration-input {
 
+    padding-left: 50px;
+  }
   .navbar-nav {
     display: inline-block !important;
     width: 100%!important;

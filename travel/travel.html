@@ -3,164 +3,161 @@
 
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Travel</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <title>Travel 2.0</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-  <script type="text/javascript" src="./travel/script/index.js"> </script>
   <link rel="stylesheet" href="./travel/css/travel.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
 <body>
 
-  <nav class=" navbar-default navbar  ">
-    <div class="navbar-header col-lg-4 col-md-4 col-sm-4">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-    <span class="icon-bar"></span>
-    <span class="icon-bar"></span>
-    <span class="icon-bar"></span>
-  </button>
-      <a class="navbar-brand " href="#">
-        <div class="section-for-navbar-brand row   ">
-          <img class="logo-navbar-brand col-lg-6 col-lg-offset-3 col-md-6 col-md-offset-3 col-sm-8  col-xs-8 col-xs-offset-2 " src="./travel/images/navigation/logo.svg" alt="">
-          <div class="mobile-basket"><img src="./travel/images/navigation/cart-icon.svg" alt=""></div>
-        </div>
+  <header>
+    <a id="toggleIcon" class="icon" ><i class="fa fa-bars" aria-hidden="true"></i></a>
+    <section class="logo">
+      <a  href="#"><img src="./travel/images/navigation/logo.svg" alt=""></a>
+    </section>
+    <nav>
+      <menu>
+        <ul class="navigation-toggle-bar" id="navToggleBar">
+          <li><a href="">Destinations</a></li>
+          <li><a href="">Style of Travel</a></li>
+          <li><a href="">About Us</a></li>
+          <li class="menu-list-mobile"><a href="">Contacts</a></li>
+          <li class="menu-list-mobile"><a href="">Account</a></li>
 
-      </a>
-    </div>
-    <div class="collapse navbar-collapse col-lg-8 col-md-8 col-sm-8 col-sm-8 col-xs-12" id="myNavbar">
-      <ul class="nav navbar-nav center-block ">
-        <li class="btn-menu col-lg-2 col-md-2 col-sm-2 col-xs-12"><a href="#"><h4>DESTINATIONS</h4></a></li>
-        <li class="btn-menu col-lg-2 col-md-2 col-sm-2 col-xs-12"><a href="#"><h4>Style of Travel</h4></a></li>
-        <li class="btn-menu col-lg-2 col-md-2 col-sm-2 col-xs-12"><a href="#"><h4>About Us</h4></a></li>
-        <li class="btn-menu  col-lg-2 col-md-6 col-sm-6">
-          <div class="btn-call "><a href="#"><img src="./travel/images/navigation/call-icon.svg" alt=""></a></div>
-          <div class="btn-call "><a href="#"><img src="./travel/images/navigation/account.svg" alt=""></a></div>
-        </li>
-        <div class="btn-menu col-lg-2 col-md-2 col-sm-2 fullscreen-case"><a href="#"><img src="./travel/images/navigation/cart-icon.svg" alt=""></a></div>
-      </ul>
-    </div>
-  </nav>
-  <section class="main ">
-    <div class="row">
-      <div class="col-lg-4  title-section row">
-        <div class="main-section-for-title-button">
-          <h1 class="main-title  col-lg-6 col-lg-offset-3">Travel <span>Agents</span> Portal</h1>
-          <p class="main-text col-lg-6 col-lg-offset-3 ">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry</p>
+        </ul>
+        <ul>
+          <li><a href=""><img src="./travel/images/navigation/call-icon.svg" alt=""></a></li>
+          <li><a href=""><img src="./travel/images/navigation/account.svg" alt=""></a></li>
+          <li><a class="cart-icon"  href=""><img src="./travel/images/navigation/cart-icon.svg" alt=""><div class="cart-items"></div></a></li>
+        </ul>
+      </menu>
+    </nav>
+  </header>
 
-          <div class="section-for-button col-lg-6 col-lg-offset-3">
-            <div class="button-create-an-account">
-              <p>Create an Account</p>
-            </div>
-            <p class="main-question-about-an-account">Have an Account Already? <a href="#">Login now</a></p>
+
+  <main>
+
+
+
+    <section id="sliderOnMainSection" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#sliderOnMainSection" data-slide-to="0" class="active"></li>
+        <li data-target="#sliderOnMainSection" data-slide-to="1"></li>
+        <li data-target="#sliderOnMainSection" data-slide-to="2"></li>
+        <li data-target="#sliderOnMainSection" data-slide-to="3"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="item active">
+          <img class="canyon-img" src="./travel/images/main/canyon.png" alt="">
+          <img class="canyon-mini" src="./travel/images/main/canyon-mini.png" alt="">
+          <div class="stiker">
+            <p>DESTINATIONS</p>
+            <p>north america </p>
           </div>
         </div>
-      </div>
-      <div id="myCarousel" class="col-lg-8 col-md-12 col-sm-12 background-sliders carousel slide  " data-ride="carousel">
-
-
-        <ol class="carousel-indicators">
-          <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
-          <li data-target="#myCarousel" data-slide-to="1"></li>
-          <li data-target="#myCarousel" data-slide-to="2"></li>
-          <li data-target="#myCarousel" data-slide-to="3"></li>
-        </ol>
-
-        <!-- Wrapper for slides -->
-        <div class="carousel-inner">
-          <div class="item active background-sliders">
-            <img src="travel/images/main/canyon.png" >
-            <div class="carousel-sticker-information">
-              <p class="carousel-sticker-information-title">DESTINATIONS</p>
-              <h1 class="carousel-sticker-information-place" >north america</h1>
-            </div>
-            <div class="mobile col-md-6 col-md-offset-3 ">
-              <h1 class="main-title text-center center-block ">Travel <span>Agents</span> Portal</h1>
-              <p class="main-text text-center center-block   ">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry</p>
-              <div class="button-create-an-account center-block   ">
-                <p>Create an Account</p>
-              </div>
-              <p class="main-question-about-an-account text-center center-block ">Have an Account Already? <a href="#">Login now</a></p>
-            </div>
-
+        <div class="item">
+          <img class="canyon-img" src="./travel/images/main/canyon.png" alt="">
+          <img class="canyon-mini" src="./travel/images/main/canyon-mini.png" alt="">
+          <div class="stiker">
+            <p>DESTINATIONS</p>
+            <p>north america</p>
           </div>
-          <div class="item background-sliders">
-            <img src="travel/images/main/canyon.png" >
-            <div class="carousel-sticker-information">
-              <p class="carousel-sticker-information-title">DESTINATIONS</p>
-              <h1 class="carousel-sticker-information-place" >north america</h1>
-            </div>
-            <div class="mobile col-md-6 col-md-offset-3 ">
-              <h1 class="main-title text-center center-block ">Travel <span>Agents</span> Portal</h1>
-              <p class="main-text text-center center-block   ">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry</p>
-              <div class="button-create-an-account center-block   ">
-                <p>Create an Account</p>
-              </div>
-              <p class="main-question-about-an-account text-center center-block ">Have an Account Already? <a href="#">Login now</a></p>
-            </div>
-
+        </div>
+        <div class="item">
+          <img class="canyon-img" src="./travel/images/main/canyon.png" alt="">
+          <img class="canyon-mini" src="./travel/images/main/canyon-mini.png" alt="">
+          <div class="stiker">
+            <p>DESTINATIONS</p>
+            <p>north america</p>
           </div>
-          <div class="item  background-sliders">
-            <img src="travel/images/main/canyon.png" >
-            <div class="carousel-sticker-information">
-              <p class="carousel-sticker-information-title">DESTINATIONS</p>
-              <h1 class="carousel-sticker-information-place" >north america</h1>
-            </div>
-            <div class="mobile col-md-6 col-md-offset-3 ">
-              <h1 class="main-title text-center center-block ">Travel <span>Agents</span> Portal</h1>
-              <p class="main-text text-center center-block   ">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry</p>
-              <div class="button-create-an-account center-block   ">
-                <p>Create an Account</p>
-              </div>
-              <p class="main-question-about-an-account text-center center-block ">Have an Account Already? <a href="#">Login now</a></p>
-            </div>
-
+        </div>
+        <div class="item">
+          <img class="canyon-img" src="./travel/images/main/canyon.png" alt="">
+          <img class="canyon-mini" src="./travel/images/main/canyon-mini.png" alt="">
+          <div class="stiker">
+            <p>DESTINATIONS</p>
+            <p>north america</p>
           </div>
-          <div class="item  background-sliders">
-            <img src="travel/images/main/canyon.png" >
-            <div class="carousel-sticker-information">
-              <p class="carousel-sticker-information-title">DESTINATIONS</p>
-              <h1 class="carousel-sticker-information-place" >north america</h1>
-            </div>
-            <div class="mobile col-md-6 col-md-offset-3 ">
-              <h1 class="main-title text-center center-block ">Travel <span>Agents</span> Portal</h1>
-              <p class="main-text text-center center-block   ">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry</p>
-              <div class="button-create-an-account center-block   ">
-                <p>Create an Account</p>
-              </div>
-              <p class="main-question-about-an-account text-center center-block ">Have an Account Already? <a href="#">Login now</a></p>
-            </div>
-
-          </div>
-
         </div>
       </div>
-
-      <div class="menu-option-selector col-lg-10 col-lg-offset-1 col-md-6 col-md-offset-3 col-sm-6 col-sm-offset-3 col-xs-10 col-xs-offset-1">
-
-        <input class="col-lg-7 col-md-12  destination-input " id="destination-input" type="text"  name="destination-input" placeholder="Where do you want to go?">
-        <input class="col-lg-2 col-md-12 when-input fade-window-for-menu-option-selector" id="when-input" type="text"  name="when-input" placeholder="When">
-        <input class="col-lg-2 col-md-12 duration-input fade-window-for-menu-option-selector" id="duration-input" type="text"  name="duration-input" placeholder="Duration">
-        <input class="col-lg-1 col-md-12 button-next-step fade-window-for-menu-option-selector" id="button-next-step" type="button"  name="button-next-step" >
-
-
-        </div>
-      </div>
+    </section>
+    <section>
+      <h1>Travel Agents Portal</h1>
+      <p class="content">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry</p>
+      <button type="button" name="Create an Account">Create an Account</button>
+      <p class="login-question">Have an Account Already? <a href="#">Login Now</a></p>
+    </section>
+  </main>
 
 
-  </section>
   <footer>
-
+    <form action="#">
+      <fieldset>
+        <input  id="destination" class="destination" type="text" name="destination" value="" placeholder="Where do you want to go?">
+        <input type="text" name="when" value="" placeholder="When">
+        <input type="text" name="duration" value="" placeholder="Duration">
+        <input type="submit" value="" name="submit_form_travel" >
+        <span class="for-submit-button"><img src="./travel/images/input-icon/arrow.JPG" alt=""></span>
+      </fieldset>
+    </form>
   </footer>
-  <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script type="text/javascript">
     $(document).ready(function() {
-      $("#destination-input").click(function() {
-        $(".fade-window-for-menu-option-selector").fadeIn(300);
-      })
-    })
+      $(window).resize(() => {
+        if ($(window).width() >= "991") {
+          $("menu ul:nth-child(1)").css("display", "flex");
+          $("form fieldset input").css("display", "block");
+          $(".for-submit-button").css("display", "flex");
+          $("form fieldset").css("height", "89px");
+        } else {
+          $("menu ul:nth-child(1)").css("display", "none");
+          $("form fieldset input:not(:first-child)").css("display", "none");
+          $(".for-submit-button").css("display", "none");
+          $("form fieldset").css("height", "60px");
+          $("#destination").focus(() => {
+            $("#destination").attr("placeholder", "Italy, China, etc.").addClass("opacity-input-placeholder");
+
+            $("form fieldset").css("height", "240px");
+            $("form").css("bottom", "240px");
+            $("form fieldset input").css("display", "block");
+            $(".for-submit-button").css("display", "flex");
+            $("main").css("height", "717px");
+            $(".carousel-inner").css("height", "717px");
+          });
+          $("#destination").focusout(() => {
+            $("#destination").attr("placeholder", "Where do you want to go?").removeClass("opacity-input-placeholder");
+
+          });
+        }
+      });
+
+      $("#toggleIcon").click(() => {
+
+        if ($("menu ul:nth-child(1)").css("display") == "flex") {
+          $("menu ul:nth-child(1)").hide(() => {
+            $("menu ul:nth-child(1)").css("display", "none");
+          });
+        } else {
+          $("menu ul:nth-child(1)").show(() => {
+            $("menu ul:nth-child(1)").css("display", "flex");
+          });
+        }
+
+      });
+      $("#destination").focus(() => {
+        $("#destination").attr("placeholder", "Italy, China, etc.").addClass("opacity-input-placeholder");
+
+      });
+      $("#destination").focusout(() => {
+          $("#destination").attr("placeholder", "Where do you want to go?").removeClass("opacity-input-placeholder");
+
+      });
+    });
   </script>
 </body>
 
